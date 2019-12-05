@@ -23,7 +23,6 @@ export default function AvatarInput() {
     }, [ref.current]); //eslint-disable-line
 
     async function handleChange(e) {
-        console.tron.log('Vim aqui');
         const data = new FormData();
         data.append('file', e.target.files[0]);
         const response = await api.post('files', data);
