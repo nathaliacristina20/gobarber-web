@@ -15,18 +15,14 @@ export default function RouteWrapper({
     const { signed } = store.getState().auth;
 
     if (!signed && isPrivate) {
-        console.tron.log('caiu aqui 1');
         return <Redirect to="/" />;
     }
 
     if (signed && !isPrivate) {
-        console.tron.log('caiu aqui 2');
         return <Redirect to="/dashboard" />;
     }
 
     const Layout = signed ? DefaultLayout : AuthLayout;
-
-    console.tron.log('signed ', signed);
 
     return (
         <Route

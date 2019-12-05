@@ -42,10 +42,7 @@ export default function Dashboard() {
                     setSeconds(setMinutes(setHours(date, hour), 0), 0),
                     0
                 );
-                console.tron.log('dsad ', response.data);
-                console.tron.log('checkedDate ', checkDate);
                 const compareDate = utcToZonedTime(checkDate, timezone);
-                console.tron.log('comparedate ', compareDate);
                 return {
                     time: `${hour}:00h`,
                     past: isBefore(compareDate, new Date()),
