@@ -1,68 +1,101 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <img width="300" align="center" src=".github/gostack.svg">   
+</p>
 
-## Available Scripts
+<h1 align="center">
+    GoBarber
+</h1>
 
-In the project directory, you can run:
+<h3 align="center">
+Plataforma de agendamento e gerenciamento para barbearias
+</h3>
 
-### `yarn start`
+<p align="center">
+  <a href="#rocket-sobre-o-projeto">Sobre o projeto</a> | <a href="#computer-tecnologias">Tecnologias</a> | <a href="#books-guia-de-instalação-e-execução">Guia de instalação e execução</a> | <a href="#pencil-como-contribuir">Como contribuir</a> | <a href="#page_with_curl-licença">Licença</a>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Layout
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<img src=".github/gobarber_web.gif">
 
-### `yarn test`
+## :rocket: Sobre o projeto
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>Esta é uma plataforma completa onde o cliente pode visualizar a agenda de barbeiros e agendar um horário, 
+e para barbeiros, permite gerenciar os horários marcados.</p> 
 
-### `yarn build`
+<p>Este é o repositório da versão web do projeto.</p>
+<ul>
+  <li>Para a api rest, <a href="https://github.com/nathaliacristina20/gobarber-server">clique aqui</a>.</li>
+  <li>Para a versão mobile, <a href="https://github.com/nathaliacristina20/gobarber-mobile">aqui</a>.</li>
+</ul>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :computer: Tecnologias
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Além das tecnologias abaixo, esta aplicação foi desenvolvida com pattens e recursos avancados! 
+<p>:heart_eyes: <strong>Arquitetura com services</strong> :balance_scale: estratégia de <strong>cache</strong> e :police_car: bibliotecas auxiliares para <strong>segurança</strong> no node.</p>
+    
+- [React.js](https://pt-br.reactjs.org/)
+- [ESLint-Airbnb](https://eslint.org/), [Prettier](https://prettier.io/) e [EditorConfig](https://editorconfig.org/)
+- [Polished](https://polished.js.org/)
+- [Prop Types](https://github.com/facebook/prop-types)
+- [Date fns](https://date-fns.org/)
+- [History](https://github.com/ReactTraining/history)
+- [Immer](https://github.com/immerjs/immer)
+- [Redux](https://redux.js.org/)
+- [Redux Saga](https://redux-saga.js.org/)
+- [Reactotron](https://github.com/infinitered/reactotron)
+- [React Toastify](https://github.com/fkhadra/react-toastify)
+- [Babel](https://babeljs.io/)
+- [React App Rewired](https://github.com/timarney/react-app-rewired)
+- [Axios](https://github.com/axios/axios)
+- [Unform](https://unform.dev/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [React Router Dom](https://reacttraining.com/react-router/web/guides/quick-start)
+- [Styled Components](https://styled-components.com/)
+- [Yup](https://github.com/jquense/yup)
+- [Socket.io](https://socket.io/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :books: Guia de instalação e execução
 
-### `yarn eject`
+### Pré-requisitos
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en/) v10.20 ou maior
+- [Yarn](https://yarnpkg.com/)
+- [Api REST do GoBarber](https://github.com/nathaliacristina20/gobarber-server)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Como executar
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<i>Antes de executar estes passos, certifique-se que sua api REST esteja em execução</i>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Clone o repositório ```git clone https://github.com/nathaliacristina20/gobarber-web.git```
+- Vá até o diretório ```cd gobarber-web```
+- Execute ```yarn``` para instalar as dependências
+- Execute ```yarn start``` para rodar o servidor
 
-## Learn More
+## :pencil: Como contribuir
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<b>Faça um fork deste repositório</b>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Clone o seu fork
+$ git clone url-do-seu-fork && cd gobarber-web
 
-### Code Splitting
+# Crie uma branch com sua feature ou correção de bugs
+$ git checkout -b minha-branch
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+# Faça o commit das suas alterações
+$ git commit -m 'feature/bugfix: minhas alterações'
 
-### Analyzing the Bundle Size
+# Faça o push para a sua branch
+$ git push origin minha-branch
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
-### Making a Progressive Web App
+## :page_with_curl: Licença
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Esse projeto está sob a licença MIT. Veja o arquivo <a href="https://github.com/nathaliacristina20/gobarber-web/blob/master/LICENSE">LICENSE</a> para mais detalhes.
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<hr />
+<p>by Nathalia Cristina :wave: <a href="https://linktr.ee/nathaliacristina20">Get in touch!</a></p>
